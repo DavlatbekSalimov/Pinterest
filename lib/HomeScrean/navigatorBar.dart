@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pinterest/HomeScrean/homePages.dart';
+import 'package:pinterest/ProfilPage/profil.dart';
 import 'package:pinterest/SearchPage/searchPage.dart';
 
 class NavigatorBarr extends StatefulWidget {
@@ -21,7 +22,7 @@ class _NavigatorBarrState extends State<NavigatorBarr> {
     HomePage(),
     SearchPage(),
     Text("serach"),
-    Text("serach"),
+    Profile(),
   ];
   @override
   Widget build(BuildContext context) {

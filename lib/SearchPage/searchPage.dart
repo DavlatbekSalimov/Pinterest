@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:pinterest/widgets/saralari.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -43,28 +44,7 @@ class _SearchPageState extends State<SearchPage> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            Row(
-              children: [
-                Container(
-                  height: 100,
-                  width: 200,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.indigo),
-                ),
-                const SizedBox(
-                  width: 5,
-                ),
-                Container(
-                  height: 100,
-                  width: 190,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: Colors.indigo,
-                  ),
-                ),
-              ],
-            )
+           SaralariPage(),
           ],
         ),
       ),
@@ -72,11 +52,4 @@ class _SearchPageState extends State<SearchPage> {
   }
 }
 
-Widget saralar() {
-  return Container(
-    height: 100,
-    width: 190,
-    decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15), color: Colors.indigo),
-  );
-}
+

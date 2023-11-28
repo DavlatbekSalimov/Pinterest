@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pinterest/HomeScrean/navigatorBar.dart';
-import 'package:pinterest/Register/LoginPage/loginPage.dart';
-import 'package:pinterest/Register/registerWelcomPage/welcomePage.dart';
-import 'package:pinterest/example_database.dart';
-import 'package:pinterest/navigatorrail.dart';
-import 'package:pinterest/silver.dart';
+import 'package:pinterest/Splash/splashPage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -24,9 +19,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     // home: Keyinigi(),
-     //home: NavRail(),
-     home: LoginPage(),
+    home: SplashView(),
+    // home: LoginPage(),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pinterest/HomeScrean/homePages.dart';
 import 'package:pinterest/HomeScrean/navigatorBar.dart';
+import 'package:pinterest/Register/SignInPage/SignUpPage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -238,21 +239,28 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     Center(
                       child: TextButton(
-                        onPressed: () {
-                          final snackBar = SnackBar(
-                            backgroundColor: Colors.black54,
-                            content: const Text('Password cannot be reset !'),
-                          );
-                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                        },
-                        child: Text(
-                          "forget your password",
+                          onPressed: () {
+                            final snackBar = SnackBar(
+                              backgroundColor: Colors.black54,
+                              content: const Text('Password cannot be reset !'),
+                            );
+                            ScaffoldMessenger.of(context)
+                                .showSnackBar(snackBar);
+                          },
+                          child: TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (contex) => SignUpPage(),
+                                  ),
+                                );
+                              },
+                              child: Text("forget your password",
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 20,
-                              color: Colors.black54),
-                        ),
-                      ),
+                              color: Colors.black54),),),),
                     )
                   ],
                 ),
